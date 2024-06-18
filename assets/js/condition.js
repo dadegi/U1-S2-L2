@@ -47,7 +47,7 @@ btnSend.addEventListener('click', function () {
 });
 
 // Array di oggetti: ogni oggetto è un elemento dell'array con il suo indice; per accedere al singolo oggetto si usa la stessa sintassi della destrutturazione degli array (es. products[0]), e i singoli oggetti vanno ovviammente destrutturati per poter essere stampati a video (es. products[0].prodName accede al valore della proprietà prodName del primo oggetto presente nell'array)
-const products = [ 
+const products = [
 	{
 		prodName: 'Monitor 17"',
 		prodQty: 25,
@@ -120,3 +120,40 @@ prod3.innerText =
 	products[2].prodQty +
 	', ha un prezzo ' +
 	valutazione;
+
+const warehouse = {
+	qty: 20,
+	available: 25,
+	logistic: 8,
+};
+
+// Operatori multipli combinati
+if (
+	(warehouse.qty > warehouse.available &&
+		warehouse.qty > warehouse.logistic) ||
+	warehouse.logistic > 10
+) {
+	console.log('Il prodotto è disponibile per il trasporto');
+} else {
+	console.log('Il prodotto non è disponibile per il trasporto');
+}
+
+// If lungo
+const dayName = 6;
+const thisDay = document.getElementById('thisDay');
+
+if(dayName === 0) {
+    thisDay.innerText += ' Domenica';
+} else if (dayName === 1) {
+    thisDay.innerText += ' Lunedì';
+} else if (dayName === 2) {
+    thisDay.innerText += ' Martedì';
+} else if (dayName === 3) {
+    thisDay.innerText += ' Mercoledì';
+} else if (dayName === 4) {
+    thisDay.innerText += ' Giovedì';
+} else if (dayName === 5) {
+    thisDay.innerText += ' Venerdì';
+} else {
+    thisDay.innerText += ' Sabato';
+}
