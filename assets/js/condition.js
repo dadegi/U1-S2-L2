@@ -142,18 +142,18 @@ if (
 const dayName = 6;
 const thisDay = document.getElementById('thisDay');
 
-if(dayName === 0) {
-    thisDay.innerText += ' Domenica';
+if (dayName === 0) {
+	thisDay.innerText += ' Domenica';
 } else if (dayName === 1) {
-    thisDay.innerText += ' Lunedì';
+	thisDay.innerText += ' Lunedì';
 } else if (dayName === 2) {
-    thisDay.innerText += ' Martedì';
+	thisDay.innerText += ' Martedì';
 } else if (dayName === 3) {
-    thisDay.innerText += ' Mercoledì';
+	thisDay.innerText += ' Mercoledì';
 } else if (dayName === 4) {
-    thisDay.innerText += ' Giovedì';
+	thisDay.innerText += ' Giovedì';
 } else if (dayName === 5) {
-    thisDay.innerText += ' Venerdì';
+	thisDay.innerText += ' Venerdì';
 } else {
-    thisDay.innerText += ' Sabato';
+	thisDay.innerText += ' Sabato';
 }
